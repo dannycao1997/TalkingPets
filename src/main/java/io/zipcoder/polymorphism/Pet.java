@@ -1,9 +1,19 @@
 package io.zipcoder.polymorphism;
 
-public class Pet {
-    public boolean getPetName() {
+abstract class Pet { //made abstract pet class
+    private String petName;
+
+    public Pet(String petName){
+        this.petName = petName;
     }
 
-    public Object speak() {
+    public String getPetName(){ // petName getter
+        return petName;
     }
-}
+
+    public void setPetName(String petName){ // petName setter
+        this.petName = petName;
+    }
+
+    public abstract String speak(); // speak method that each subclass overides
+    }
