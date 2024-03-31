@@ -15,5 +15,5 @@ abstract class Pet { //made abstract pet class
         this.petName = petName;
     }
 
-    public abstract String speak(); // speak method that each subclass overides
+    public abstract String speak(); // speak method that each subclass overrides
     }
